@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Fresh Bazaar</title>
+    <meta name="description" content="Order fresh vegetables and fruits online in Joyrambati.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div style="background: var(--secondary); color: white; text-align: center; padding: 0.5rem; font-size: 0.85rem; font-weight: 600;">
+        <span class="lang-text" data-en="🚚 Free Delivery on orders above ₹299!" data-bn="🚚 ₹২৯৯ এর উপরে অর্ডারে ফ্রি ডেলিভারি!">🚚 ₹২৯৯ এর উপরে অর্ডারে ফ্রি ডেলিভারি!</span>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <nav class="nav-container glass">
+            <a href="index.html" class="logo">
+                🛒 <span data-en="Fresh" data-bn="ফ্রেশ">ফ্রেশ</span> <span data-en="Bazaar" data-bn="বাজার">বাজার</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-en="Home" data-bn="হোম">হোম</a>
+                <a href="shop.html" class="nav-link active" data-en="Shop" data-bn="দোকান">দোকান</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="lang-toggle">English</button>
+                <div id="user-status">
+                    <a href="login.html" class="btn btn-primary" id="auth-btn" data-en="Login" data-bn="লগইন">লগইন</a>
+                </div>
+                <div class="cart-btn" id="open-cart">
+                    🛒
+                    <div class="cart-count">0</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Shop Section -->
+        <section class="section" id="shop" style="margin-top: 5rem;">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2 data-en="Fresh Vegetables" data-bn="তাজা শাকসবজি">তাজা শাকসবজি</h2>
+                    <p data-en="Straight from the local farms" data-bn="সরাসরি স্থানীয় খামার থেকে">সরাসরি স্থানীয় খামার থেকে</p>
+                </div>
+            </div>
+            <div class="grid" id="vegetables-grid">
+                <!-- Vegetables will be injected by JS -->
+            </div>
+
+            <div class="section-header" style="margin-top: 4rem;">
+                <div class="section-title">
+                    <h2 data-en="Fresh Fruits" data-bn="তাজা ফল">তাজা ফল</h2>
+                    <p data-en="Sweet and juicy seasonal fruits" data-bn="মিষ্টি এবং রসালো মরসুমী ফল">মিষ্টি এবং রসালো মরসুমী ফল</p>
+                </div>
+            </div>
+            <div class="grid" id="fruits-grid">
+                <!-- Fruits will be injected by JS -->
+            </div>
+        </section>
+
+        </section>
+    </main>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3 data-en="Your Cart" data-bn="আপনার কার্ট">আপনার কার্ট</h3>
+                <button id="close-cart" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">✕</button>
+            </div>
+            <div class="cart-items" id="cart-list">
+                <!-- Cart items will be injected by JS -->
+            </div>
+            <div class="cart-footer">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; font-weight: 700;">
+                    <span data-en="Total" data-bn="মোট">মোট</span>
+                    <span id="cart-total">₹0</span>
+                </div>
+                <button class="btn btn-primary" style="width: 100%; justify-content: center;" id="checkout-btn" data-en="Checkout" data-bn="চেকআউট">চেকআউট</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

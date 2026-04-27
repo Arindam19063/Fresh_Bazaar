@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Bazaar | Home</title>
+    <meta name="description" content="Fresh vegetables and fruits from farms to your doorstep in Joyrambati.">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .hero-banner {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="scrolled">
+        <nav class="nav-container glass">
+            <a href="index.html" class="logo">
+                🛒 <span data-en="Fresh" data-bn="ফ্রেশ">ফ্রেশ</span> <span data-en="Bazaar" data-bn="বাজার">বাজার</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active" data-en="Home" data-bn="হোম">হোম</a>
+                <a href="shop.html" class="nav-link" data-en="Shop" data-bn="দোকান">দোকান</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-bn="যোগাযোগ">যোগাযোগ</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="lang-toggle">English</button>
+                <div id="user-status">
+                    <a href="login.html" class="btn btn-primary" id="auth-btn" data-en="Login" data-bn="লগইন">লগইন</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-content" style="max-width: 800px; padding: 0 2rem;">
+                <h1 style="font-size: 4rem; margin-bottom: 1.5rem;" data-en="Eat Fresh, Live Healthy" data-bn="তাজা খান, সুস্থ থাকুন">তাজা খান, সুস্থ থাকুন</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;" data-en="Experience the taste of farm-fresh vegetables and fruits delivered straight to your home in Joyrambati." data-bn="খামার-তাজা শাকসবজি এবং ফলের স্বাদ নিন, যা সরাসরি আপনার বাড়িতে ডেলিভারি দেওয়া হয়।">খামার-তাজা শাকসবজি এবং ফলের স্বাদ নিন, যা সরাসরি আপনার বাড়িতে ডেলিভারি দেওয়া হয়।</p>
+                <a href="shop.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.2rem; border-radius: 50px;" data-en="Start Shopping Now" data-bn="এখনই কেনাকাটা শুরু করুন">এখনই কেনাকাটা শুরু করুন</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <div class="section-header" style="text-align: center;">
+                <h2 data-en="Why Choose Us?" data-bn="কেন আমাদের বেছে নেবেন?">কেন আমাদের বেছে নেবেন?</h2>
+                <p data-en="We bring you the best quality produce with care" data-bn="আমরা যত্নের সাথে সেরা মানের ফসল নিয়ে আসি">আমরা যত্নের সাথে সেরা মানের ফসল নিয়ে আসি</p>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="feature-card">
+                    <span class="feature-icon">🚜</span>
+                    <h3 data-en="Direct from Farms" data-bn="সরাসরি খামার থেকে">সরাসরি খামার থেকে</h3>
+                    <p data-en="No middleman, just fresh produce directly from local farmers to your kitchen." data-bn="কোনো মধ্যস্বত্বভোগী নেই, সরাসরি স্থানীয় কৃষকদের থেকে আপনার রান্নাঘরে।">কোনো মধ্যস্বত্বভোগী নেই, সরাসরি স্থানীয় কৃষকদের থেকে আপনার রান্নাঘরে।</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">✨</span>
+                    <h3 data-en="Quality Guaranteed" data-bn="গুণমান নিশ্চিত">গুণমান নিশ্চিত</h3>
+                    <p data-en="Every item is handpicked and quality-checked before delivery." data-bn="প্রতিটি আইটেম ডেলিভারির আগে হাতে বেছে নেওয়া এবং গুণমান পরীক্ষা করা হয়।">প্রতিটি আইটেম ডেলিভারির আগে হাতে বেছে নেওয়া এবং গুণমান পরীক্ষা করা হয়।</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3 data-en="Fast Delivery" data-bn="দ্রুত ডেলিভারি">দ্রুত ডেলিভারি</h3>
+                    <p data-en="Get your orders delivered within hours in Joyrambati area." data-bn="জয়রামবাটি এলাকায় কয়েক ঘণ্টার মধ্যে আপনার অর্ডার ডেলিভারি পান।">জয়রামবাটি এলাকায় কয়েক ঘণ্টার মধ্যে আপনার অর্ডার ডেলিভারি পান।</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💰</span>
+                    <h3 data-en="Best Prices" data-bn="সেরা দাম">সেরা দাম</h3>
+                    <p data-en="Premium quality produce at the most competitive local prices." data-bn="সবচেয়ে প্রতিযোগিতামূলক দামে প্রিমিয়াম মানের ফসল।">সবচেয়ে প্রতিযোগিতামূলক দামে প্রিমিয়াম মানের ফসল।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Reused) -->
+        <section class="section" id="contact">
+            <h2 style="margin-bottom: 2rem;" data-en="Find Us" data-bn="আমাদের সন্ধান করুন">আমাদের সন্ধান করুন</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i>📍</i>
+                        <h4 data-en="Address" data-bn="ঠিকানা">ঠিকানা</h4>
+                        <p class="bn">জয়রামবাটি সবজি বাজার, বাঁকুড়া</p>
+                    </div>
+                    <div class="info-card">
+                        <i>📞</i>
+                        <h4 data-en="Phone" data-bn="ফোন">ফোন</h4>
+                        <p>9647969391</p>
+                    </div>
+                    <div class="info-card">
+                        <i>👨‍💼</i>
+                        <h4 data-en="Owner" data-bn="মালিক">মালিক</h4>
+                        <p class="bn">মৃণ্ময় প্রামাণিক</p>
+                        <a href="admin.html" style="font-size: 0.8rem; color: var(--primary); text-decoration: none; margin-top: 0.5rem; display: block;" data-en="→ Open Shop Manager" data-bn="→ শপ ম্যানেজার খুলুন">→ শপ ম্যানেজার খুলুন</a>
+                    </div>
+                </div>
+                <div class="map-container" style="border-radius: var(--radius-md); overflow: hidden; height: 300px;">
+                    <iframe src="https://www.google.com/maps?q=Joyrambati,Bankura,West+Bengal+722161&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2025 Fresh Bazaar. Managed by Mrinmoy Pramanik.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Check login status on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (user) {
+                document.getElementById('user-status').innerHTML = `
+                    <button class="btn btn-outline" onclick="logout()" data-en="Logout" data-bn="লগআউট">লগআউট</button>
+                `;
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('user');
+            localStorage.removeItem('token');
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
